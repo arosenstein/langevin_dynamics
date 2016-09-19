@@ -28,7 +28,8 @@ A Langevin Dynamics Simulator
 Features
 --------
 
-* TODO
+This is a Langevin Dynamics Simulator implemented in python. 
+* TODO : Complete description of features
 
 Credits
 ---------
