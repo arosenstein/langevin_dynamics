@@ -12,11 +12,12 @@ deploy:
 env:
 - TOXENV=py35
 - TOXENV=py34
-- TOXENV=py33
-- TOXENV=py27
-- TOXENV=py26
 - TOXENV=pypy
-install: pip install -U tox
+install: 
+- pip install -U tox
+- pip install .
+- pip install scipy
+- pip install numpy
 language: python
 python: 3.5
 script: tox -e ${TOXENV}
