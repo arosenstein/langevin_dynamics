@@ -15,9 +15,13 @@ env:
 - TOXENV=pypy
 install: 
 - pip install -U tox
+- pip install coveralls
 - pip install .
 - pip install scipy
 - pip install numpy
 language: python
 python: 3.5
-script: tox -e ${TOXENV}
+script: 
+- tox -e ${TOXENV}
+- coverage run --source=langevin_dynamics setup.py test
+after_success: coveralls
