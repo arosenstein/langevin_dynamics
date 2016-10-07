@@ -12,7 +12,6 @@ deploy:
 env:
 - TOXENV=py35
 - TOXENV=py34
-- TOXENV=pypy
 install: 
 - pip install -U tox
 - pip install coveralls
@@ -22,6 +21,5 @@ install:
 language: python
 python: 3.5
 script: 
-- tox -e ${TOXENV}
 - coverage run --source=langevin_dynamics setup.py test
 after_success: coveralls
