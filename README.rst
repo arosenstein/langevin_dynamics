@@ -17,6 +17,8 @@ langevin-dynamics
      :target: https://pyup.io/repos/github/arosenstein/langevin_dynamics/
      :alt: Updates
 
+.. image:: https://coveralls.io/repos/github/arosenstein/langevin_dynamics/badge.svg?branch=master
+	 :target: https://coveralls.io/github/arosenstein/langevin_dynamics?branch=master
 
 A Langevin Dynamics Simulator
 
