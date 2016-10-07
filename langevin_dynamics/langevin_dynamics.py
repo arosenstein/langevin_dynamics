@@ -4,9 +4,7 @@ from math import sqrt
 #from scipy.constants import k as k_b
 
 def langevin_dynamics(x_0, v_0, temp, damp, time_step, total_time, mass, potential_energy_filepath, output_file = 'output.txt'):
-	'''Completes a 1 dimensional Langevin Dynamics Simulation dependant on an input file of the form:
-
-	INDEX TIME POTENTIAL_ENERGY FORCE 
+	'''Completes a 1 dimensional Langevin Dynamics Simulation dependant on an input file of the form:	
 	
 	Input
 	-----
@@ -32,7 +30,7 @@ def langevin_dynamics(x_0, v_0, temp, damp, time_step, total_time, mass, potenti
 		mass of the simulation particle
 
 	potential_energy_filepath : String
-		Relative filepath to the file containing data on potential energy
+		Relative filepath to the file containing data on potential energy. File contains 4 columns: INDEX | TIME | POTENTIAL_ENERGY | FORCE 
 
 	output_file : String
 		Relative filepath to the output file containing position and velocity data
